@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="chihome.css">
+</head>
+<body>
+
+	<header><div id="nav">
+		<h1>MAPHIOUS <span class='mart'>CHICKEN</span></h1>
+		
+			<ul>
+				<li>Products</li>
+				<li>Wallet</li>
+				<li>|</li>
+				<li onclick="document.getElementById('log').style.display='block'">Login</li>
+				<li onclick="document.getElementById('reg').style.display='block'">Signup</li>
+			</ul>
+		</div>
+<div id="sec"><h2>WELCOME TO MAPHIOUS FRIED CHICKENS.</h2>
+  <div id='cart' class="cart"><a id="az">h</a></div>
+	<!-- <div id="trid">Your Home Bit Mining Mart</div> -->
+
+</div>	
+</header>
+<fieldset class="pkc">
+<legend>Order menu</legend>
+
+</div> 
+<div class="menu">
+	<div class="hr"><hr><hr><hr></div>
+	<a href="">+Chickens</a>
+	<a href="">+Pizza</a>
+	<a href="">+Burger</a>
+	<a href="">+Shawarma</a>
+	<a href="">+Drinks</a>
+	<a href="">more+</a>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="imag.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="layer.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="suya.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Ferocious Suya.<span class="sm"></span></div>
+  </div>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="imag.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="shake.jpeg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Ferocious </div>
+  </div>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="chicks.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="piis.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="layer.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank"> 
+      <img src="suya.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive vb[]">
+  <div class="img">
+    <a target="_blank" >
+      <img src="chis.jpeg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+</fieldset> 	
+
+
+
+      
+<div id="container">
+  <span onclick="document.getElementById('container').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <h3>cart items</h3>
+  <span onclick="document.getElementById('cartlog').style.display='none'" class="closer" title="Close Modal">&times;</span>
+<div id="tag"><div id="cartlog">
+  
+ 
+</div> <form>
+    <input type="text" name="address" placeholder="address">
+     <input type="text" name="address" placeholder="email">
+      <input type="text" name="address" placeholder="phone">
+      <button  onclick="done()"><a href='homepage.html'> BUY</a> </button>
+  </form></div>
+
+</div>
+
+<footer>
+
+	<div class="foota">
+	<ol>
+		<li>Home</li>
+		<li>About</li>
+		<li>Contact</li>
+		<li>HowItWorks</li>
+		<li>Services</li>
+	</ol>
+
+<h3>copyright @ bitmart.ng.int</h3>
+</div>
+
+</footer>
+		
+
+</body>
+</html>
+<script type="text/javascript">
+
+document.getElementById('cart').addEventListener('click',function(){
+
+// insDiv();
+document.getElementById('container').style.display='block'
+var cat = document.getElementsByClassName('responsive');
+
+
+})
+var text = 0; 
+var car = document.getElementById('cartlog') 
+var close = document.getElementsByClassName('closer'); 
+var div1 = document.createElement('div');
+// function addCart(){
+var x = document.getElementsByClassName("vb[]");
+var j = 0;
+var v = document.getElementById('az');
+var m = "";
+var t = document.createElement('div');
+for(var i = 0; i < x.length;i++ ){
+     x[i].addEventListener('click',function(){
+  
+      m += this.innerHTML;
+        car.innerHTML =  m;
+       
+
+
+      j += 1;
+       v.innerHTML = j;
+        v.style.display='block';
+
+function insDiv(){
+   
+   div1.setAttribute('id','disp');
+   document.getElementById('tag').innerHTML = div1.innerHTML;
+}
+
+
+})
+}
+
+function done(){
+
+}
+
+
+
+
+
+
+</script>
